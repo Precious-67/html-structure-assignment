@@ -1,7 +1,7 @@
 # html-structure-assignment
 # HTML Skeletal Site Design
 
-Rebuilding the structure of real websites in HTML.
+Rebuilding the structure of websites in HTML.
 
 ## Week 1: Landing Page for Notion site
 - Site: Notion (notion.com)
