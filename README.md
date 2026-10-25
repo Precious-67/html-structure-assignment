@@ -1,14 +1,14 @@
 # html-structure-assignment
-# HTML Site Dissection
+# HTML Skeletal Site Design
 
-Assignments for Uncle P Academy: rebuilding the structure of real websites in HTML only (no CSS).
+Rebuilding the structure of real websites in HTML.
 
-## Week 1: Landing Page
+## Week 1: Landing Page for Notion site
 - Site: Notion (notion.com)
 - File: week1/Notion.html
 - Screenshot: week1/Notion.png
 
-## Week 2: Content Page
+## Week 2: Content Page for an article on NatGeo site 
 - Site: National Geographic, Dolly Parton photo article
 - File: week2/NatGeo.html
 - Screenshot: week2/NatGeo.png
