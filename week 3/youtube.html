@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hamilton-YouTube
+  </title>
+</head>
+<body>
+
+  <header id="top-header" class="site-header">
+    <button type="button" id="menu-button">Menu</button>
+
+    <h1 id="logo">YouTube <small><sup>NG</sup></small></h1>
+
+    <form id="search-form" class="search-form" action="/results" method="get">
+      <label for="search-input">Search</label>
+      <input type="search" id="search-input" name="search_query" placeholder="Search" value="hamilton">
+      <button type="reset" id="clear-button">Clear</button>
+      <button type="submit" id="search-button">Search</button>
+      <button type="button" id="voice-button">Search with your voice</button>
+    </form>
+
+    <div id="header-actions">
+      <button type="button" id="settings-button">Settings</button>
+      <button type="button" id="sign-in-button">Sign in</button>
+    </div>
+  </header>
+
+  <nav id="main-nav" class="sidebar" aria-label="Main navigation">
+
+    <section id="nav-primary" class="nav-group">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shorts</a></li>
+        <li><a href="#">Subscriptions</a></li>
+        <li><a href="#">You</a></li>
+        <li><a href="#">History</a></li>
+      </ul>
+    </section>
+    <hr>
+
+    <div id="nav-sign-in" class="nav-group">
+
+      <p>Sign in to like videos, comment, and subscribe.</p>
+      <button type="button">Sign in</button>
+    </div>
+    <hr>
+
+    <section id="nav-explore" class="nav-group">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Playables</a></li>
+        <li><a href="#">Show more</a></li>
+      </ul>
+    </section>
+    <hr>
+    
+
+    <section id="nav-more" class="nav-group">
+    <h2>More from YouTube</h2>
+    <ul>
+      <li><a href="#">Try Premium for $0</a></li>
+      <li><a href="#">YouTube Music</a></li>
+      <li><a href="#">YouTube Kids</a></li>
+      <li><a href="#">YouTube Labs</a></li>
+    </ul>
+  </section>
+  <hr>
+
+  <section id="nav-report" class="nav-group">
+    <h2>Help</h2>
+    <ul>
+      <li><a href="#">Report history</a></li>
+    </ul>
+  </section>
+  <hr>
+
+  <section id="nav-legal" class="nav-group">
+    <h2>About YouTube</h2>
+   
+      <p><a href="#">About</a>&nbsp;&nbsp;<a href="#">Press</a>&nbsp;&nbsp;<a href="#">Copyright</a>&nbsp;&nbsp;<a href="#">Contact us</a>&nbsp;&nbsp;<a href="#">Creators</a>&nbsp;&nbsp; <a href="#">Advertise</a>&nbsp;&nbsp;<a href="#">Developers</a></p>
+ 
+   
+      <p><a href="#">Terms</a>&nbsp;&nbsp;<a href="#">Privacy</a>&nbsp;&nbsp;<a href="#">Policy &amp; Safety</a>&nbsp;&nbsp;<a href="#">How YouTube works</a>&nbsp;&nbsp;<a href="#">Test new features</a></p>
+ 
+    <p>&copy; 2026 Google LLC</p>
+  </section>
+
+  </nav>
+
+  <main id="main-content">
+
+    
+    <section id="filters" class="filter-bar">
+      <h2>Filter results</h2>
+      <button type="button">All</button>
+      <button type="button">Shorts</button>
+      <button type="button">Unwatched</button>
+      <button type="button">Videos</button>
+      <button type="button">Recently uploaded</button>
+      <button type="button">Live</button>
+      <button type="button" id="filters-button">Filters</button>
+    </section>
+
+    <section id="search-results" class="results">
+      <h2>Search results</h2>
+
+    
+      <article id="playlist-result" class="result playlist">
+        <a href="#">
+          <img src="hamilton-playlist.jpg" alt="Cover of the Hamilton Original Broadway Cast Album playlist">
+        </a>
+        <p class="video-count">46 videos</p>
+        <h3><a href="#">HAMILTON - Original Broadway Cast Album</a></h3>
+        <p class="channel-name">Hamilton (verified) &middot; Playlist</p>
+        <ul class="playlist-preview">
+          <li>"Alexander Hamilton" from HAMILTON &middot; 3:58</li>
+          <li>"Aaron Burr, Sir" from HAMILTON &middot; 2:37</li>
+        </ul>
+        <p><a href="/#">View full playlist</a></p>
+      </article>
+
+    
+      <article id="channel-result" class="result channel">
+        <a href="/@HamiltonMusical">
+          <img src="hamilton-channel.jpg" alt="Hamilton channel profile picture, a gold circle with a star">
+        </a>
+        <h3><a href="#">Hamilton</a></h3>
+        <p class="channel-stats">@HamiltonMusical &middot; 1.04M subscribers</p>
+        <p class="channel-description">Broadway, @disneyplus, and around the world!</p>
+        <p><a href="#">https://www.HamiltonMusical.com</a></p>
+        <button type="button">Subscribe</button>
+      </article>
+    </section>
+
+  
+
+  <section id="latest-videos" class="results">
+    <h2>Latest from Hamilton</h2>
+
+    <article class="result video">
+      <a href="#">
+        <img src="rise-up.jpg" alt="Lin-Manuel Miranda in a crown giving a thumbs up next to a child">
+      </a>
+      <p class="video-length">1:34</p>
+      <h3><a href="#">Rise Up! Hamilton: The Anthology Release Day with Lin-Manuel Miranda</a></h3>
+      <p class="video-stats">40K views &middot; 4 weeks ago</p>
+      <p class="channel-name"><a href="#">Hamilton</a> and <a href="#">RHINO</a></p>
+      <p class="video-description">The best part of our story? You. An unforgettable day at the Drama Book Shop celebrating Rise Up! Hamilton: The Anthology ...</p>
+      <p class="video-badge">4K</p>
+      <button type="button">More actions</button>
+    </article>
+
+    <article class="result video">
+      <a href="#">
+        <img src="midterms.jpg" alt="Poster that reads 2026 Time for the Midterms, in honor of National Voter Registration Day">
+      </a>
+      <p class="video-length">3:18</p>
+      <h3><a href="#">2026: Time for the Midterms</a></h3>
+      <p class="video-stats">407K views &middot; 1 month ago</p>
+      <p class="channel-name"><a href="#">Hamilton</a> (verified)</p>
+      <p class="video-description">It's time for the midterms. You ready? In support of #NationalVoterRegistrationDay, members of the #HamiltonBway ...</p>
+      <button type="button">More actions</button>
+    </article>
+
+    <button type="button" id="more-videos">+2 More</button>
+  </section>
+
+
+  <section id="latest-shorts" class="results">
+    <h2>Latest Shorts from Hamilton</h2>
+
+    <article class="result short">
+      <a href="#">
+        <img src="short1.jpg" alt="A golden crown in a gold frame">
+      </a>
+      <p class="video-badge">New</p>
+      <h3><a href="#">Short video 1</a></h3>
+    </article>
+
+    <article class="result short">
+      <a href="#">
+        <img src="short2.jpg" alt="Close-up of a performer's face">
+      </a>
+      <h3><a href="#">Short video 2</a></h3>
+    </article>
+
+    <article class="result short">
+      <a href="#">
+        <img src="short3.jpg" alt="Text over a paper background about how many Federalist Papers you wrote">
+      </a>
+      <h3><a href="#">My reaction based on how many Federalist Papers you wrote</a></h3>
+    </article>
+  </section>
+
+  
+    <aside id="album-card" class="side-card">
+      <h2>Hamilton</h2>
+      <p>Album</p>
+      <img src="hamilton-album.jpg" alt="Hamilton An American Musical album cover with a star">
+      <button type="button">Play album</button>
+
+      <h3>Tracks</h3>
+  <ol>
+    <li>
+      <p class="track-title">Alexander Hamilton</p>
+      <p class="track-artist">Hamilton</p>
+      <p class="track-time">3:58</p>
+    </li>
+    <li>
+      <p class="track-title">Aaron Burr, Sir</p>
+      <p class="track-artist">usnavi</p>
+      <p class="track-time">2:37</p>
+    </li>
+    <li>
+      <p class="track-title">"My Shot" from HAMILTON</p>
+      <p class="track-artist">Hamilton</p>
+      <p class="track-time">5:34</p>
+    </li>
+    <li>
+      <p class="track-title">The Story of Tonight</p>
+      <p class="track-artist">usnavi</p>
+      <p class="track-time">1:32</p>
+    </li>
+    <li>
+      <p class="track-title">The Schuyler Sisters</p>
+      <p class="track-artist">Hamilton</p>
+      <p class="track-time">3:07</p>
+    </li>
+    <li>
+      <p class="track-title">Farmer Refuted</p>
+      <p class="track-artist">Thayne Jasperson - Topic</p>
+      <p class="track-time">1:53</p>
+    </li>
+    <li>
+      <p class="track-title">You'll Be Back</p>
+      <p class="track-artist">Nxbula</p>
+      <p class="track-time">3:29</p>
+    </li>
+    <li>
+      <p class="track-title">Right Hand Man [Explicit]</p>
+      <p class="track-artist">usnavi</p>
+      <p class="track-time">5:22</p>
+    </li>
+    <li>
+      <p class="track-title">A Winter's Ball</p>
+      <p class="track-artist">Leslie Odom Jr.</p>
+      <p class="track-time">1:10</p>
+    </li>
+    <li>
+      <p class="track-title">Helpless</p>
+      <p class="track-artist">Lyrics, Camera, Action!</p>
+      <p class="track-time">4:10</p>
+    </li>
+  </ol>
+
+  <p><a href="#">VIEW ALL</a></p>
+</aside>
+
+  </main>
+
+</body>
+</html>

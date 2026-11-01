@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Operating Systems - Skeleton</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border-bottom: 1px solid black;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="page-header">
+    <h1>Comparison of Operating Systems</h1>
+    <p>Four tables comparing operating systems: general, technical, security and commands.</p>
+  </header>
+
+  <nav id="page-nav" aria-label="Tables on this page">
+    <ul>
+      <li><a href="#general">General information</a></li>
+      <li><a href="#technical">Technical information</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#commands">Commands</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+
+    <section id="general" class="table-section">
+      <h2>General information</h2>
+
+      <table id="general-table" class="data-table">
+      
+        <thead>
+          <tr>
+            <th scope="col" bgcolor="#eaecf0">Name</th>
+            <th scope="col" bgcolor="#eaecf0">Creator</th>
+            <th scope="col" bgcolor="#eaecf0">Initial public release</th>
+            <th scope="col" bgcolor="#eaecf0">Predecessor</th>
+            <th scope="col" bgcolor="#eaecf0">Current stable version</th>
+            <th scope="col" bgcolor="#eaecf0">Latest release date</th>
+            <th scope="col" bgcolor="#eaecf0">Cost</th>
+            <th scope="col" bgcolor="#eaecf0">Preferred license</th>
+            <th scope="col" bgcolor="#eaecf0">Target system type</th>
+            <th scope="col" bgcolor="#eaecf0">Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AIX</th>
+            <td>IBM</td>
+            <td>1986</td>
+            <td>UNIX System V Release 3</td>
+            <td>7.3 TL4 (7.3.4)</td>
+            <td>December 2025</td>
+            <td bgcolor="#ffc8e8">Commercial</td>
+            <td bgcolor="#e0e0ff">Proprietary</td>
+            <td>Server, NAS, workstation</td>
+            <td>Image, Bundled</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AIX/370</th>
+            <td>IBM</td>
+            <td>1989</td>
+            <td>IX/370</td>
+            <td>Release 2.1?</td>
+            <td>February 22, 1991</td>
+            <td bgcolor="#ffc8e8">Non-free</td>
+            <td bgcolor="#e0e0ff">Proprietary</td>
+            <td>IBM System/370, AIX/ESA V1 and V2</td>
+            <td>Image, Bundled</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AIX/ESA</th>
+            <td>IBM</td>
+            <td>1992</td>
+            <td>AIX/370, OSF/1</td>
+            <td>Version 2 Release 2</td>
+            <td>February 26, 1993</td>
+            <td bgcolor="#ffc8e8">Non-free</td>
+            <td bgcolor="#e0e0ff">Proprietary</td>
+            <td>ESA/370, IBM System/390</td>
+            <td>Image, Bundled</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AmigaOS classic</th>
+            <td>Commodore International, Haage &amp; Partner, Hyperion Entertainment</td>
+            <td>1985</td>
+            <td>TRIPOS (as the disk operating component of AmigaOS)</td>
+            <td>3.2.2.1</td>
+            <td>April 23, 2023</td>
+            <td bgcolor="#ffc8e8">Bundled with hardware up to version 3.0; later versions also sold as separate packages</td>
+            <td bgcolor="#e0e0ff">Proprietary; open source clone available under AROS Public License</td>
+            <td>Workstation, personal computer</td>
+            <td>Bundled</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="technical" class="table-section">
+      <h2>Technical information</h2>
+
+      <table id="technical-table" class="data-table">
+       
+        <thead>
+          <tr>
+            <th scope="col" bgcolor="#eaecf0">Name</th>
+            <th scope="col" bgcolor="#eaecf0">Computer architectures supported</th>
+            <th scope="col" bgcolor="#eaecf0">File systems supported</th>
+            <th scope="col" bgcolor="#eaecf0">Kernel type</th>
+            <th scope="col" bgcolor="#eaecf0">Source lines of code</th>
+            <th scope="col" bgcolor="#eaecf0">GUI default is on</th>
+            <th scope="col" bgcolor="#eaecf0">Package management</th>
+            <th scope="col" bgcolor="#eaecf0">Update management</th>
+            <th scope="col" bgcolor="#eaecf0">Native APIs</th>
+            <th scope="col" bgcolor="#eaecf0">Non-native APIs supported through subsystems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AIX</th>
+            <td>POWER, PowerPC-AS, PowerPC, Power ISA</td>
+            <td>JFS, JFS2, ISO 9660, UDF, NFS, SMBFS, GPFS</td>
+            <td>Monolithic with modules</td>
+            <td>-</td>
+            <td bgcolor="#ffc0c0">No</td>
+            <td>installp, RPM</td>
+            <td>Service Update Management Assistant (SUMA)</td>
+            <td>SysV/POSIX</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AmigaOS classic</th>
+            <td>68k, PowerPC</td>
+            <td>Proprietary (OFS, FFS, SFS, PFS), FAT, ISO 9660, UDF, many others via 3rd party drivers, such as SMBFS, etc.</td>
+            <td>Microkernel</td>
+            <td>-</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td>Installer (almost not needed)</td>
+            <td>-</td>
+            <td>Proprietary</td>
+            <td>BSD subset (available through 3rd party ixemul.library)</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AmigaOS 4</th>
+            <td>PowerPC</td>
+            <td>Proprietary (OFS, FFS, SFS, PFS), JXFS, FAT, ISO 9660, UDF, many others via 3rd party drivers, such as SMBFS, etc.</td>
+            <td>Microkernel</td>
+            <td>-</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td>Installer (almost not needed)</td>
+            <td>AmiUpdate (almost not needed)</td>
+            <td>Proprietary</td>
+            <td>BSD subset (available through 3rd party ixemul.library)</td>
+          </tr>
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AROS</th>
+            <td>IA-32</td>
+            <td>JFS (default), HPFS, ISO 9660, UDF, FAT32, NTFS</td>
+            <td>Hybrid</td>
+            <td>-</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td>ANPM (based on WarpIN, YUM and RPM)</td>
+            <td>Update Facility</td>
+            <td>OS/2</td>
+            <td>POSIX, Win16, DOS, Win32, Java</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section id="security" class="table-section">
+      <h2>Security</h2>
+
+      <table id="security-table" class="data-table">
+        
+
+        <thead>
+         
+          <tr>
+            <th scope="col" rowspan="3" bgcolor="#eaecf0">Name</th>
+            <th scope="col" rowspan="3" bgcolor="#eaecf0">Resource access control</th>
+            <th scope="col" rowspan="3" bgcolor="#eaecf0">Subsystem isolation mechanisms</th>
+            <th scope="col" rowspan="3" bgcolor="#eaecf0">Integrated firewall</th>
+            <th scope="col" rowspan="3" bgcolor="#eaecf0">Encrypted file systems</th>
+            <th scope="colgroup" colspan="2" rowspan="2" bgcolor="#eaecf0">No execute (NX) page flag</th>
+            <th scope="colgroup" colspan="6" bgcolor="#eaecf0">Manufacturer acknowledged unpatched vulnerabilities (by severity)</th>
+          </tr>
+          <!-- HEADER ROW 2 -->
+          <tr>
+            <th scope="colgroup" colspan="5" bgcolor="#eaecf0">Secunia</th>
+            <th scope="col" bgcolor="#eaecf0">Security-Focus</th>
+          </tr>
+       
+          <tr>
+            <th scope="col" bgcolor="#eaecf0">Hardware</th>
+            <th scope="col" bgcolor="#eaecf0">Emulation</th>
+            <th scope="col" bgcolor="#eaecf0">Extremely critical (number/oldest)</th>
+            <th scope="col" bgcolor="#eaecf0">Highly critical (number/oldest)</th>
+            <th scope="col" bgcolor="#eaecf0">Moderately critical (number/oldest)</th>
+            <th scope="col" bgcolor="#eaecf0">Less critical (number/oldest)</th>
+            <th scope="col" bgcolor="#eaecf0">Not critical (number/oldest)</th>
+            <th scope="col" bgcolor="#eaecf0">Total (number/oldest)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+         
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">AIX 7.1</th>
+            <td>POSIX, ACLs, MAC, Trusted AIX - MLS, RBAC</td>
+            <td>chroot</td>
+            <td>IPFilter, IPsec, VPNs, basic IDS</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#dddddd">-</td>
+            <td colspan="5" bgcolor="#dddddd">Unknown</td>
+            <td bgcolor="#b8ffd8">0</td>
+          </tr>
+         
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">FreeBSD 10.1</th>
+            <td>POSIX, ACLs, MAC</td>
+            <td>chroot, Jails, MAC partitions, multilevel security, Biba Model, BSD file flags using chflags, Capsicum capability-based security</td>
+            <td>IPFW2, IPFilter, PF, IPsec</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#ffc0c0">0</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">GhostBSD 3.1</th>
+            <td>POSIX, ACLs, MAC</td>
+            <td>chroot, jail, MAC partitions, BSD file flags set using chflags</td>
+            <td>IPFW2, IPFilter, PF</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#90ff90">Yes</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#b8ffd8">0</td>
+            <td bgcolor="#ffc0c0">&gt;0</td>
+          </tr>
+         
+          <tr>
+            <th scope="row" bgcolor="#eaecf0">Genode</th>
+            <td>Hierarchical, least privilege</td>
+            <td>Capability-based security</td>
+            <td>Virtual switch and NAPT controls in user-space</td>
+            <td bgcolor="#ffc0c0">No</td>
+            <td bgcolor="#90ff90">Kernel dependent</td>
+            <td bgcolor="#ffc0c0">No</td>
+            <td colspan="6" bgcolor="#dddddd">Unknown</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section id="commands" class="table-section">
+      <h2>Commands</h2>
+      <p>For POSIX compliant (or partly compliant) systems like FreeBSD, Linux, macOS or Solaris, the basic commands are the same because they are standardized.</p>
+
+      <table id="commands-table" class="data-table">
+          <thead>
+          <tr>
+            <th scope="col" bgcolor="#eaecf0">Feature</th>
+            <th scope="col" bgcolor="#eaecf0">AROS</th>
+            <th scope="col" bgcolor="#eaecf0">FreeBSD</th>
+            <th scope="col" bgcolor="#eaecf0">Linux-based</th>
+            <th scope="col" bgcolor="#eaecf0">HP-UX</th>
+            <th scope="col" bgcolor="#eaecf0">OpenVMS</th>
+            <th scope="col" bgcolor="#eaecf0">macOS</th>
+            <th scope="col" bgcolor="#eaecf0">Solaris</th>
+            <th scope="col" bgcolor="#eaecf0">Windows (cmd)</th>
+            <th scope="col" bgcolor="#eaecf0">Windows (PowerShell)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr bgcolor="#f8f9fa">
+            <th scope="row" bgcolor="#eaecf0">List directory</th>
+            <td>list, dir</td>
+            <td>ls</td>
+            <td>ls</td>
+            <td>ls</td>
+            <td>dir</td>
+            <td>ls</td>
+            <td>ls</td>
+            <td>dir</td>
+            <td>Get-ChildItem</td>
+          </tr>
+          <tr bgcolor="#f8f9fa">
+            <th scope="row" bgcolor="#eaecf0">Clear console</th>
+            <td>clear</td>
+            <td>clear</td>
+            <td>clear</td>
+            <td>clear</td>
+            <td>ty/pa nl:</td>
+            <td>clear</td>
+            <td>clear</td>
+            <td>cls</td>
+            <td>Clear-Host</td>
+          </tr>
+          <tr bgcolor="#f8f9fa">
+            <th scope="row" bgcolor="#eaecf0">Copy file(s)</th>
+            <td>copy</td>
+            <td>cp</td>
+            <td>cp</td>
+            <td>cp</td>
+            <td>copy</td>
+            <td>cp</td>
+            <td>cp</td>
+            <td>copy</td>
+            <td>Copy-Item</td>
+          </tr>
+          <tr bgcolor="#f8f9fa">
+            <th scope="row" bgcolor="#eaecf0">Move file(s)</th>
+            <td>move</td>
+            <td>mv</td>
+            <td>mv</td>
+            <td>mv</td>
+            <td>ren</td>
+            <td>mv</td>
+            <td>mv</td>
+            <td>move</td>
+            <td>Move-Item</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
