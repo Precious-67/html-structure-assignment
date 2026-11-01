@@ -13,4 +13,17 @@ Rebuilding the structure of websites in HTML.
 - File: week2/NatGeo.html
 - Screenshot: week2/NatGeo.png
 
+## Week 3: Forms and Data Tables
+
+### Part A: Form site
+- Site: YouTube search results (youtube.com), search for "hamilton"
+- File: week3/YouTube.html
+- Screenshot: week3/youTube 1.png to youtube 5.png
+
+### Part B: Data table
+- Site: Comparison of operating systems (en.wikipedia.org/wiki/Comparison_of_operating_systems)
+- File: week3/OperatingSystems.html
+- Screenshot: week3/Comparison of os 1.png to Comparison of os 3.png
+
+
 By Akinola Precious
